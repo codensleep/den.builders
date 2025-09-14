@@ -108,7 +108,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
         </div>
       </div>
     )
-  } catch (error) {
+  } catch {
     notFound()
   }
 }
