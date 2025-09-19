@@ -7,6 +7,7 @@ import remarkRehype from 'remark-rehype'
 import rehypeStringify from 'rehype-stringify'
 import rehypeHighlight from 'rehype-highlight'
 import { BlogPost, BlogPostMetadata } from '@/types/blog'
+import type { Root, Element, Properties, Parent, Node as HastNode } from 'hast'
 
 const postsDirectory = path.join(process.cwd(), 'content/blog')
 
@@ -48,31 +49,41 @@ export async function markdownToHtml(markdown: string): Promise<string> {
   // so that internal links work when the site is hosted under /den.builders
   const basePath = '/den.builders'
 
-  // Minimal rehype plugin (no external deps) to prefix href/src that start with '/'
+  // Minimal typed rehype plugin to prefix root-relative href/src with basePath
   function rehypePrefixLinks() {
-    return (tree: any) => {
-      const visit = (node: any) => {
-        if (node && typeof node === 'object') {
-          const tag = node.tagName
-          const props = node.properties || {}
+    return (tree: Root) => {
+      const walk = (node: HastNode): void => {
+        if (node.type === 'element') {
+          const el = node as Element
+          const props = (el.properties ?? {}) as Properties
 
-          if (tag === 'a' && typeof props.href === 'string' && props.href.startsWith('/') && !props.href.startsWith(basePath + '/')) {
-            props.href = basePath + props.href
-            node.properties = props
+          const href = props['href']
+          if (
+            typeof href === 'string' &&
+            href.startsWith('/') &&
+            !href.startsWith(basePath + '/')
+          ) {
+            props['href'] = (basePath + href) as unknown as Properties[string]
+            el.properties = props
           }
 
-          if (tag === 'img' && typeof props.src === 'string' && props.src.startsWith('/') && !props.src.startsWith(basePath + '/')) {
-            props.src = basePath + props.src
-            node.properties = props
+          const src = props['src']
+          if (
+            typeof src === 'string' &&
+            src.startsWith('/') &&
+            !src.startsWith(basePath + '/')
+          ) {
+            props['src'] = (basePath + src) as unknown as Properties[string]
+            el.properties = props
           }
+        }
 
-          if (Array.isArray((node as any).children)) {
-            for (const child of (node as any).children) visit(child)
-          }
+        if ('children' in node && Array.isArray((node as Parent).children)) {
+          for (const child of (node as Parent).children) walk(child as HastNode)
         }
       }
 
-      visit(tree)
+      walk(tree as unknown as HastNode)
     }
   }
 
