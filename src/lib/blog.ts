@@ -44,9 +44,42 @@ export function getAllPosts(): BlogPost[] {
 }
 
 export async function markdownToHtml(markdown: string): Promise<string> {
+  // Prefix root-relative links/images in Markdown with the GitHub Pages base path
+  // so that internal links work when the site is hosted under /den.builders
+  const basePath = '/den.builders'
+
+  // Minimal rehype plugin (no external deps) to prefix href/src that start with '/'
+  function rehypePrefixLinks() {
+    return (tree: any) => {
+      const visit = (node: any) => {
+        if (node && typeof node === 'object') {
+          const tag = node.tagName
+          const props = node.properties || {}
+
+          if (tag === 'a' && typeof props.href === 'string' && props.href.startsWith('/') && !props.href.startsWith(basePath + '/')) {
+            props.href = basePath + props.href
+            node.properties = props
+          }
+
+          if (tag === 'img' && typeof props.src === 'string' && props.src.startsWith('/') && !props.src.startsWith(basePath + '/')) {
+            props.src = basePath + props.src
+            node.properties = props
+          }
+
+          if (Array.isArray((node as any).children)) {
+            for (const child of (node as any).children) visit(child)
+          }
+        }
+      }
+
+      visit(tree)
+    }
+  }
+
   const result = await remark()
     .use(remarkParse)
     .use(remarkRehype)
+    .use(rehypePrefixLinks)
     .use(rehypeHighlight)
     .use(rehypeStringify)
     .process(markdown)
