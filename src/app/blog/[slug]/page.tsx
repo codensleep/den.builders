@@ -2,7 +2,7 @@ import { notFound } from 'next/navigation'
 import Link from 'next/link'
 import { getAllPostSlugs, getPostBySlug, markdownToHtml } from '@/lib/blog'
 import { Badge } from '@/components/ui/badge'
-import { Button } from '@/components/ui/button'
+import { ThemeToggle } from '@/components/theme-toggle'
 import { ArrowLeft, Calendar, Clock, User } from 'lucide-react'
 
 interface BlogPostPageProps {
@@ -22,7 +22,7 @@ export async function generateMetadata({ params }: BlogPostPageProps) {
   
   if (!post) {
     return {
-      title: 'Пост не найден'
+      title: 'Post not found'
     }
   }
 
@@ -41,68 +41,85 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
 
     return (
       <div className="min-h-screen bg-background">
-        <div className="mx-auto max-w-4xl px-8 py-12">
-          <Link href="/">
-            <Button variant="outline" className="mb-8 gap-2">
-              <ArrowLeft className="h-4 w-4" />
-              Вернуться к блогу
-            </Button>
+        <div className="mx-auto max-w-4xl px-6 py-10 md:py-14">
+          <nav className="mb-12 flex items-center justify-between border-b border-border/60 pb-6">
+            <Link
+              href="/"
+              className="text-xs font-medium uppercase tracking-[0.35em] text-muted-foreground transition-colors hover:text-foreground"
+            >
+              den.builders
+            </Link>
+            <ThemeToggle />
+          </nav>
+
+          <Link
+            href="/"
+            className="group inline-flex items-center gap-2 text-sm text-muted-foreground transition-colors hover:text-foreground"
+          >
+            <ArrowLeft className="h-4 w-4 transition-transform group-hover:-translate-x-1" />
+            Back to all articles
           </Link>
 
-          <article className="bg-card border rounded-lg shadow-sm p-8">
-            <header className="mb-8">
-              <h1 className="text-4xl font-bold mb-4 text-foreground">
-                {post.title}
-              </h1>
-              
-              <p className="text-xl text-muted-foreground mb-6">
-                {post.description}
-              </p>
+          <article className="mt-10 rounded-3xl border border-border/60 bg-card/70 p-8 shadow-sm transition-colors dark:bg-card/60 md:p-12">
+            <header className="mb-10 space-y-6">
+              <div className="space-y-3">
+                <h1 className="text-balance text-4xl font-semibold tracking-tight text-foreground sm:text-5xl">
+                  {post.title}
+                </h1>
+                <p className="text-balance text-lg text-muted-foreground">
+                  {post.description}
+                </p>
+              </div>
 
-              <div className="flex flex-wrap items-center gap-4 text-sm text-muted-foreground mb-6">
+              <div className="flex flex-wrap items-center gap-4 text-sm text-muted-foreground">
                 <div className="flex items-center gap-2">
                   <Calendar className="h-4 w-4" />
                   <time dateTime={post.date}>
-                    {new Date(post.date).toLocaleDateString('ru-RU', {
+                    {new Date(post.date).toLocaleDateString('en-US', {
                       year: 'numeric',
                       month: 'long',
-                      day: 'numeric'
+                      day: 'numeric',
                     })}
                   </time>
                 </div>
-                
+                <span className="hidden h-1 w-1 rounded-full bg-muted-foreground/40 sm:inline-flex" aria-hidden />
                 <div className="flex items-center gap-2">
                   <User className="h-4 w-4" />
                   <span>{post.author}</span>
                 </div>
-                
+                <span className="hidden h-1 w-1 rounded-full bg-muted-foreground/40 sm:inline-flex" aria-hidden />
                 <div className="flex items-center gap-2">
                   <Clock className="h-4 w-4" />
-                  <span>{post.readingTime} мин. чтения</span>
+                  <span>{post.readingTime} min read</span>
                 </div>
               </div>
 
-              <div className="flex flex-wrap gap-2 mb-8">
+              <div className="flex flex-wrap gap-2">
                 {post.tags.map((tag) => (
-                  <Badge key={tag} variant="secondary">
+                  <Badge
+                    key={tag}
+                    variant="outline"
+                    className="rounded-full border-border/60 px-3 py-1 text-xs font-medium text-muted-foreground"
+                  >
                     {tag}
                   </Badge>
                 ))}
               </div>
             </header>
 
-            <div 
+            <div
               className="prose prose-lg max-w-none prose-headings:text-foreground prose-p:text-foreground prose-a:text-primary prose-strong:text-foreground prose-code:bg-muted prose-code:text-foreground prose-pre:bg-muted-foreground prose-pre:text-background dark:prose-pre:bg-muted dark:prose-pre:text-foreground"
               dangerouslySetInnerHTML={{ __html: htmlContent }}
             />
           </article>
 
-          <div className="mt-8 text-center">
-            <Link href="/">
-              <Button variant="outline" className="gap-2">
-                <ArrowLeft className="h-4 w-4" />
-                Все статьи
-              </Button>
+          <div className="mt-8 flex justify-center">
+            <Link
+              href="/"
+              className="inline-flex items-center gap-2 rounded-full border border-border/60 px-4 py-2 text-sm font-medium text-muted-foreground transition-colors hover:border-foreground/30 hover:text-foreground"
+            >
+              <ArrowLeft className="h-4 w-4" />
+              All articles
             </Link>
           </div>
         </div>
