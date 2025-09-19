@@ -21,6 +21,13 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Debug workspace
+        run: |
+          pwd
+          ls -la
+          echo "--- bourbon-app listing ---"
+          ls -la bourbon-app || true
+
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
@@ -29,12 +36,14 @@ jobs:
           cache-dependency-path: '**/package-lock.json'
 
       - name: Install dependencies
-        run: npm ci
-        working-directory: bourbon-app
+        run: |
+          cd bourbon-app
+          npm ci
 
       - name: Build static site
-        run: npm run build
-        working-directory: bourbon-app
+        run: |
+          cd bourbon-app
+          npm run build
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
