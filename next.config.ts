@@ -5,6 +5,8 @@ const nextConfig: NextConfig = {
   trailingSlash: true,
   skipTrailingSlashRedirect: true,
   distDir: 'out',
+  basePath: '/den.builders',
+  assetPrefix: '/den.builders',
   images: {
     unoptimized: true,
   },
