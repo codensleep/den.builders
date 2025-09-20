@@ -47,7 +47,7 @@ export function getAllPosts(): BlogPost[] {
 export async function markdownToHtml(markdown: string): Promise<string> {
   // Prefix root-relative links/images in Markdown with the GitHub Pages base path
   // so that internal links work when the site is hosted under /den.builders
-  const basePath = '/den.builders'
+  const basePath = process.env.NEXT_PUBLIC_BASE_PATH || ''
 
   // Minimal typed rehype plugin to prefix root-relative href/src with basePath
   function rehypePrefixLinks() {
@@ -61,6 +61,7 @@ export async function markdownToHtml(markdown: string): Promise<string> {
           if (
             typeof href === 'string' &&
             href.startsWith('/') &&
+            basePath &&
             !href.startsWith(basePath + '/')
           ) {
             props['href'] = (basePath + href) as unknown as Properties[string]
@@ -71,6 +72,7 @@ export async function markdownToHtml(markdown: string): Promise<string> {
           if (
             typeof src === 'string' &&
             src.startsWith('/') &&
+            basePath &&
             !src.startsWith(basePath + '/')
           ) {
             props['src'] = (basePath + src) as unknown as Properties[string]

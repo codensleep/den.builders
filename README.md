@@ -37,6 +37,16 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
+### Base path (GitHub Pages)
+
+When deploying under a subpath (e.g. GitHub Pages at `/den.builders`) set:
+
+```bash
+NEXT_PUBLIC_BASE_PATH=/den.builders npm run build
+```
+
+Locally, leave `NEXT_PUBLIC_BASE_PATH` unset so the app runs at `/` and avoids 404s.
+
 ## Project Structure
 
 ```
