@@ -1,5 +1,6 @@
 "use client"
 
+import Image from 'next/image'
 import { ArrowLeft, ArrowRight } from 'lucide-react'
 import { useEffect, useMemo, useState } from 'react'
 
@@ -8,6 +9,7 @@ interface ProjectItem {
   description: string
   sector: string
   palette: string
+  image?: string
 }
 
 const projects: ProjectItem[] = [
@@ -17,6 +19,7 @@ const projects: ProjectItem[] = [
       'A modular analytics surface for a fintech team scaling rapidly across new markets.',
     sector: 'Fintech infrastructure',
     palette: 'from-emerald-300/90 via-emerald-500/40 to-emerald-900/20',
+    image: undefined,
   },
   {
     title: 'Northwind Studio',
@@ -24,6 +27,7 @@ const projects: ProjectItem[] = [
       'An adaptive design system powering a hybrid desktop and mobile creative workspace.',
     sector: 'Creative tooling',
     palette: 'from-sky-300/90 via-indigo-500/40 to-indigo-900/20',
+    image: undefined,
   },
   {
     title: 'Hearth Housing',
@@ -31,10 +35,27 @@ const projects: ProjectItem[] = [
       'Turnkey property dashboards that keep local teams aligned around lived-in data.',
     sector: 'Proptech operations',
     palette: 'from-amber-300/90 via-orange-500/40 to-orange-900/20',
+    image: undefined,
+  },
+  {
+    title: 'Silver Lake Residence',
+    description:
+      'A hillside renovation balancing indoor calm with layered outdoor terraces and native landscaping.',
+    sector: 'Residential architecture',
+    palette: 'from-rose-300/90 via-rose-500/40 to-rose-900/20',
+    image: '/projects/silver-lake-residence.jpg',
+  },
+  {
+    title: 'Canyon Workspace',
+    description:
+      'A boutique coworking environment for creative teams with flexible pods and acoustically tuned lounges.',
+    sector: 'Commercial interiors',
+    palette: 'from-teal-300/90 via-cyan-500/40 to-cyan-900/20',
+    image: undefined,
   },
 ]
 
-const AUTOPLAY_INTERVAL = 6000
+const AUTOPLAY_INTERVAL = 9000
 
 export function OurWorkCarousel() {
   const [activeIndex, setActiveIndex] = useState(0)
@@ -100,6 +121,7 @@ export function OurWorkCarousel() {
           <div className="relative aspect-[4/3] overflow-hidden rounded-3xl border border-border/60 bg-card/70 shadow-lg">
             {items.map((project, index) => {
               const isActive = index === activeIndex
+              const showImage = Boolean(project.image)
               return (
                 <article
                   key={project.title}
@@ -110,6 +132,22 @@ export function OurWorkCarousel() {
                   }`}
                   aria-hidden={!isActive}
                 >
+                  <div className="absolute inset-0 -z-10 overflow-hidden rounded-3xl">
+                    <div
+                      className={`absolute inset-0 bg-gradient-to-br ${project.palette}`}
+                    />
+                    {showImage && (
+                      <Image
+                        src={project.image as string}
+                        alt={project.title}
+                        fill
+                        className="object-cover"
+                        sizes="(min-width: 1024px) 640px, (min-width: 768px) 50vw, 100vw"
+                        priority={index === 0}
+                      />
+                    )}
+                    <div className="absolute inset-0 bg-gradient-to-br from-black/70 via-black/60 to-black/40" />
+                  </div>
                   <div>
                     <span className="inline-flex items-center rounded-full border border-white/20 bg-white/10 px-3 py-1 text-xs font-medium uppercase tracking-[0.3em] text-white/70 backdrop-blur">
                       {project.sector}
@@ -127,10 +165,7 @@ export function OurWorkCarousel() {
                     <span className="font-medium">{String(index + 1).padStart(2, '0')}</span>
                   </div>
 
-                  <div
-                    className={`absolute inset-0 -z-10 bg-gradient-to-br ${project.palette}`}
-                  />
-                  <div className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_top_right,rgba(255,255,255,0.35),transparent_45%)]" />
+                  <div className="pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(circle_at_top_right,rgba(255,255,255,0.35),transparent_45%)]" />
                 </article>
               )
             })}

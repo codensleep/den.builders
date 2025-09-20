@@ -6,7 +6,7 @@ import { OurWorkCarousel } from '@/components/our-work-carousel'
 
 const services = [
   {
-    title: 'Product Architecture',
+    title: 'Architecture',
     description:
       'We shape the problem, define the outcomes, and leave teams with the clarity they need to move.',
     focusAreas: [
@@ -74,7 +74,7 @@ export default function HomePage() {
               Collaborations built around partnership, pace, and measurable impact.
             </h2>
             <p className="mx-auto mt-4 max-w-2xl text-base text-muted-foreground">
-              We pair strategy with execution so that every engagement leaves behind tools, systems, and confidence for the team taking it forward.
+              A team of strong builders and architects based in Los Angeles helps our customers achieve excellence through outstanding service. We focus on neat, ergonomic, and impressive design. We offer complete interior design projects, basic remodeling, and construction for any residential space.
             </p>
           </div>
 
