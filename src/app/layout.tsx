@@ -16,6 +16,8 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "den.builders - Modern web craft",
   description: "Thoughtful essays and notes on building digital products with clarity and pace.",
+  // Ensure absolute URLs in meta/canonical point to the GitHub Pages project path
+  metadataBase: new URL("https://codensleep.github.io/den.builders"),
 };
 
 export default function RootLayout({

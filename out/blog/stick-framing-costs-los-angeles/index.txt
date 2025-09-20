@@ -1,0 +1,113 @@
+1:"$Sreact.fragment"
+2:I[27423,["/den.builders/_next/static/chunks/0aa7a2061727042c.js"],"ThemeProvider"]
+3:I[39756,["/den.builders/_next/static/chunks/ff1a16fafef87110.js","/den.builders/_next/static/chunks/7dd66bdf8a7e5707.js"],"default"]
+4:I[37457,["/den.builders/_next/static/chunks/ff1a16fafef87110.js","/den.builders/_next/static/chunks/7dd66bdf8a7e5707.js"],"default"]
+6:I[97367,["/den.builders/_next/static/chunks/ff1a16fafef87110.js","/den.builders/_next/static/chunks/7dd66bdf8a7e5707.js"],"OutletBoundary"]
+8:I[11533,["/den.builders/_next/static/chunks/ff1a16fafef87110.js","/den.builders/_next/static/chunks/7dd66bdf8a7e5707.js"],"AsyncMetadataOutlet"]
+a:I[97367,["/den.builders/_next/static/chunks/ff1a16fafef87110.js","/den.builders/_next/static/chunks/7dd66bdf8a7e5707.js"],"ViewportBoundary"]
+c:I[97367,["/den.builders/_next/static/chunks/ff1a16fafef87110.js","/den.builders/_next/static/chunks/7dd66bdf8a7e5707.js"],"MetadataBoundary"]
+d:"$Sreact.suspense"
+f:I[68027,["/den.builders/_next/static/chunks/0aa7a2061727042c.js"],"default"]
+:HL["/den.builders/_next/static/chunks/8c554c8f564a9e62.css","style"]
+:HL["/den.builders/_next/static/media/797e433ab948586e-s.p.dbea232f.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/den.builders/_next/static/media/caa3a2e1cccd8315-s.p.853070df.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+0:{"P":null,"b":"kRyI4ROVQDcx-GWk51V3j","p":"/den.builders","c":["","blog","stick-framing-costs-los-angeles",""],"i":false,"f":[[["",{"children":["blog",{"children":[["slug","stick-framing-costs-los-angeles","d"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/den.builders/_next/static/chunks/8c554c8f564a9e62.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/den.builders/_next/static/chunks/0aa7a2061727042c.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"en","suppressHydrationWarning":true,"children":["$","body",null,{"className":"geist_a71539c9-module__T19VSG__variable geist_mono_8d43a2aa-module__8Li5zG__variable antialiased","children":["$","$L2",null,{"attribute":"class","defaultTheme":"system","enableSystem":true,"disableTransitionOnChange":true,"children":["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}]}]}]]}],{"children":["blog",["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["slug","stick-framing-costs-los-angeles","d"],["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["__PAGE__",["$","$1","c",{"children":["$L5",[["$","script","script-0",{"src":"/den.builders/_next/static/chunks/ff1a16fafef87110.js","async":true,"nonce":"$undefined"}],["$","script","script-1",{"src":"/den.builders/_next/static/chunks/8c44aecc4cf43fb1.js","async":true,"nonce":"$undefined"}]],["$","$L6",null,{"children":["$L7",["$","$L8",null,{"promise":"$@9"}]]}]]}],{},null,false]},null,false]},null,false]},null,false],["$","$1","h",{"children":[null,[["$","$La",null,{"children":"$Lb"}],["$","meta",null,{"name":"next-size-adjust","content":""}]],["$","$Lc",null,{"children":["$","div",null,{"hidden":true,"children":["$","$d",null,{"fallback":null,"children":"$Le"}]}]}]]}],false]],"m":"$undefined","G":["$f",[["$","link","0",{"rel":"stylesheet","href":"/den.builders/_next/static/chunks/8c554c8f564a9e62.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]]],"s":false,"S":true}
+10:I[22016,["/den.builders/_next/static/chunks/0aa7a2061727042c.js","/den.builders/_next/static/chunks/ff1a16fafef87110.js","/den.builders/_next/static/chunks/8c44aecc4cf43fb1.js"],"default"]
+11:I[94013,["/den.builders/_next/static/chunks/0aa7a2061727042c.js","/den.builders/_next/static/chunks/ff1a16fafef87110.js","/den.builders/_next/static/chunks/8c44aecc4cf43fb1.js"],"ThemeToggle"]
+5:["$","div",null,{"className":"min-h-screen bg-background","children":["$","div",null,{"className":"mx-auto max-w-4xl px-6 py-10 md:py-14","children":[["$","nav",null,{"className":"mb-12 flex items-center justify-between border-b border-border/60 pb-6","children":[["$","$L10",null,{"href":"/","className":"text-xs font-medium uppercase tracking-[0.35em] text-muted-foreground transition-colors hover:text-foreground","children":"den.builders"}],["$","$L11",null,{}]]}],["$","$L10",null,{"href":"/","className":"group inline-flex items-center gap-2 text-sm text-muted-foreground transition-colors hover:text-foreground","children":[["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-arrow-left h-4 w-4 transition-transform group-hover:-translate-x-1","aria-hidden":"true","children":[["$","path","1l729n",{"d":"m12 19-7-7 7-7"}],["$","path","x3x0zl",{"d":"M19 12H5"}],"$undefined"]}],"Back to all articles"]}],["$","article",null,{"className":"mt-10 rounded-3xl border border-border/60 bg-card/70 p-8 shadow-sm transition-colors dark:bg-card/60 md:p-12","children":[["$","header",null,{"className":"mb-10 space-y-6","children":[["$","div",null,{"className":"space-y-3","children":[["$","h1",null,{"className":"text-balance text-4xl font-semibold tracking-tight text-foreground sm:text-5xl","children":"Why Do We Pay So Much for Stick Framing in Los Angeles?"}],["$","p",null,{"className":"text-balance text-lg text-muted-foreground","children":"Understanding the high costs of stick framing in Los Angeles construction and the factors that drive up lumber and labor prices"}]]}],["$","div",null,{"className":"flex flex-wrap items-center gap-4 text-sm text-muted-foreground","children":[["$","div",null,{"className":"flex items-center gap-2","children":[["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-calendar h-4 w-4","aria-hidden":"true","children":[["$","path","1cmpym",{"d":"M8 2v4"}],["$","path","4m81vk",{"d":"M16 2v4"}],["$","rect","1hopcy",{"width":"18","height":"18","x":"3","y":"4","rx":"2"}],["$","path","8toen8",{"d":"M3 10h18"}],"$undefined"]}],["$","time",null,{"dateTime":"2024-02-11","children":"February 11, 2024"}]]}],["$","span",null,{"className":"hidden h-1 w-1 rounded-full bg-muted-foreground/40 sm:inline-flex","aria-hidden":true}],["$","div",null,{"className":"flex items-center gap-2","children":[["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-user h-4 w-4","aria-hidden":"true","children":[["$","path","975kel",{"d":"M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"}],["$","circle","17ys0d",{"cx":"12","cy":"7","r":"4"}],"$undefined"]}],["$","span",null,{"children":"Den Builders Team"}]]}],["$","span",null,{"className":"hidden h-1 w-1 rounded-full bg-muted-foreground/40 sm:inline-flex","aria-hidden":true}],["$","div",null,{"className":"flex items-center gap-2","children":[["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-clock h-4 w-4","aria-hidden":"true","children":[["$","path","mmk7yg",{"d":"M12 6v6l4 2"}],["$","circle","1mglay",{"cx":"12","cy":"12","r":"10"}],"$undefined"]}],["$","span",null,{"children":[4," min read"]}]]}]]}],["$","div",null,{"className":"flex flex-wrap gap-2","children":[["$","span","construction",{"data-slot":"badge","className":"inline-flex items-center justify-center border w-fit whitespace-nowrap shrink-0 [&>svg]:size-3 gap-1 [&>svg]:pointer-events-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive transition-[color,box-shadow] overflow-hidden [a&]:hover:bg-accent [a&]:hover:text-accent-foreground rounded-full border-border/60 px-3 py-1 text-xs font-medium text-muted-foreground","children":"construction"}],"$L12","$L13","$L14","$L15"]}]]}],"$L16"]}],"$L17"]}]}]
+12:["$","span","framing",{"data-slot":"badge","className":"inline-flex items-center justify-center border w-fit whitespace-nowrap shrink-0 [&>svg]:size-3 gap-1 [&>svg]:pointer-events-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive transition-[color,box-shadow] overflow-hidden [a&]:hover:bg-accent [a&]:hover:text-accent-foreground rounded-full border-border/60 px-3 py-1 text-xs font-medium text-muted-foreground","children":"framing"}]
+13:["$","span","los-angeles",{"data-slot":"badge","className":"inline-flex items-center justify-center border w-fit whitespace-nowrap shrink-0 [&>svg]:size-3 gap-1 [&>svg]:pointer-events-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive transition-[color,box-shadow] overflow-hidden [a&]:hover:bg-accent [a&]:hover:text-accent-foreground rounded-full border-border/60 px-3 py-1 text-xs font-medium text-muted-foreground","children":"los-angeles"}]
+14:["$","span","costs",{"data-slot":"badge","className":"inline-flex items-center justify-center border w-fit whitespace-nowrap shrink-0 [&>svg]:size-3 gap-1 [&>svg]:pointer-events-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive transition-[color,box-shadow] overflow-hidden [a&]:hover:bg-accent [a&]:hover:text-accent-foreground rounded-full border-border/60 px-3 py-1 text-xs font-medium text-muted-foreground","children":"costs"}]
+15:["$","span","lumber",{"data-slot":"badge","className":"inline-flex items-center justify-center border w-fit whitespace-nowrap shrink-0 [&>svg]:size-3 gap-1 [&>svg]:pointer-events-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive transition-[color,box-shadow] overflow-hidden [a&]:hover:bg-accent [a&]:hover:text-accent-foreground rounded-full border-border/60 px-3 py-1 text-xs font-medium text-muted-foreground","children":"lumber"}]
+18:T17e2,<h1><strong>Why Do We Pay So Much for Stick Framing in Los Angeles?</strong></h1>
+<p>If you've ever built or remodeled a home in Los Angeles, you probably felt the shock when you saw the <strong>cost of stick framing</strong>. Clients often ask us at <strong>Den Builders</strong>:</p>
+<blockquote>
+<p><em>“Why</em> <em>is</em> <em>it</em> <em>so</em> <em>expensive?</em> <em>It’s</em> <em>just</em> <em>wood</em> <em>and</em> <em>nails,</em>
+<em>right?”</em></p>
+</blockquote>
+<p>We get it — framing doesn’t sound glamorous compared to marble
+countertops or luxury bathrooms in <strong>Beverly</strong> <strong>Hills</strong>. But in
+reality, stick framing is the backbone of your house. And in Los
+Angeles, there are several reasons why it costs what it does. Let us
+share what we’ve seen in our projects across <strong>Sherman</strong> <strong>Oaks,</strong>
+<strong>Malibu,</strong> <strong>and</strong> <strong>Pasadena</strong>.</p>
+<p><strong>1.</strong> <strong>Lumber</strong> <strong>Prices</strong> <strong>in</strong> <strong>California</strong> <strong>Are</strong>
+<strong>Unpredictable</strong></p>
+<p>One of the biggest reasons is simply the <strong>price</strong> <strong>of</strong> <strong>lumber</strong>.</p>
+<blockquote>
+<p>● Global supply issues and wildfires can drive costs up overnight.</p>
+<p>● In California, demand is always high because of continuous new
+builds and remodels.</p>
+</blockquote>
+<p>On one project in <strong>Santa</strong> <strong>Monica</strong>, our client’s framing costs
+jumped nearly 25% compared to just a year earlier. Not because we
+changed anything, but because lumber prices spiked.</p>
+<p><strong>2.</strong> <strong>Skilled</strong> <strong>Labor</strong> <strong>in</strong> <strong>Los</strong> <strong>Angeles</strong> <strong>Is</strong>
+<strong>Expensive</strong></p>
+<p>Stick framing isn’t just “hammering wood.” It requires <strong>skilled</strong>
+<strong>carpenters</strong> who can read blueprints, cut with precision, and build
+structures that are earthquake-safe.</p>
+<blockquote>
+<p>● Los Angeles labor costs are among the highest in the U.S.</p>
+<p>● The best framers work quickly and correctly, saving time later.</p>
+</blockquote>
+<p>At Den Builders, we’ve seen the difference first-hand: a great framing
+crew in <strong>Pasadena</strong> can shave weeks off a project schedule. But quality
+labor here comes at a premium.</p>
+<p><strong>3.</strong> <strong>California</strong> <strong>Building</strong> <strong>Codes</strong> <strong>and</strong> <strong>Inspections</strong></p>
+<p>This is a big one. In Los Angeles, every stage of construction must pass
+inspection. For stick framing, that means:</p>
+<blockquote>
+<p>● Special bracing for earthquakes.</p>
+<p>● Fire-resistant materials in certain zones (especially in <strong>Malibu</strong>
+<strong>or</strong> <strong>Hollywood</strong> <strong>Hills</strong>).</p>
+<p>● Energy efficiency requirements.</p>
+</blockquote>
+<p>On one hillside project, the <strong>engineering</strong> <strong>for</strong> <strong>framing</strong>
+<strong>alone</strong> <strong>cost</strong> <strong>more</strong> <strong>than</strong> <strong>the</strong> <strong>finishes</strong> <strong>inside</strong>
+<strong>the</strong> <strong>home</strong>. That’s how much emphasis California places on safety
+and code compliance.</p>
+<p><strong>4.</strong> <strong>Waste,</strong> <strong>Logistics,</strong> <strong>and</strong> <strong>Delays</strong></p>
+<p>Framing generates more hidden costs than most people realize:</p>
+<blockquote>
+<p>● <strong>Material</strong> <strong>waste</strong> is inevitable — not every cut can be reused.</p>
+<p>● Rain can warp wood, forcing replacements.</p>
+<p>● Delivery in LA traffic can delay entire projects.</p>
+</blockquote>
+<p>We once worked on a project in <strong>Brentwood</strong> where a delivery truck
+couldn’t access a narrow street. That two-week delay cost more in labor
+and storage than the lumber itself.</p>
+<p><strong>5.</strong> <strong>The</strong> <strong>Foundation</strong> <strong>of</strong> <strong>Everything</strong> <strong>Else</strong></p>
+<p>Here’s the part many homeowners overlook: framing affects every step
+that comes after.</p>
+<blockquote>
+<p>● If the frame is even slightly off, drywall won’t align, cabinets
+won’t fit, and roofing becomes a headache.</p>
+<p>● A strong, precise frame is what keeps your home standing during
+California earthquakes.</p>
+</blockquote>
+<p>We always tell our clients: <em>“Nobody</em> <em>notices</em> <em>perfect</em> <em>framing,</em>
+<em>but</em> <em>everyone</em> <em>notices</em> <em>bad</em> <em>framing.”</em></p>
+<p><strong>So,</strong> <strong>Why</strong> <strong>Do</strong> <strong>We</strong> <strong>Pay</strong> <strong>So</strong> <strong>Much?</strong></p>
+<p>Because in Los Angeles, stick framing is more than just wood:</p>
+<blockquote>
+<p>● It’s <strong>skilled</strong> <strong>craftsmanship</strong>,</p>
+<p>● <strong>Strict</strong> <strong>code</strong> <strong>compliance</strong>,</p>
+<p>● <strong>Material</strong> <strong>volatility</strong>, and</p>
+<p>● <strong>The</strong> <strong>foundation</strong> <strong>of</strong> <strong>every</strong> <strong>other</strong> <strong>detail</strong> <strong>in</strong>
+<strong>your</strong> <strong>home</strong>.</p>
+</blockquote>
+<p>Yes, it feels expensive up front, but cutting corners here will cost you
+much more later.</p>
+<p>✅ <strong>Bottom</strong> <strong>Line:</strong> At <strong>Den</strong> <strong>Builders</strong>, we’ve seen time and
+again that paying for high-quality framing in Los Angeles saves money
+and stress in the long run. Whether it’s a <strong>luxury</strong> <strong>home</strong> <strong>in</strong>
+<strong>Beverly</strong> <strong>Hills</strong>, an <strong>ADU</strong> <strong>in</strong> <strong>Pasadena</strong>, or a <strong>beach</strong>
+<strong>house</strong> <strong>in</strong> <strong>Malibu</strong>, stick framing done right is the skeleton
+your dream home depends on.</p>16:["$","div",null,{"className":"prose prose-lg max-w-none prose-headings:text-foreground prose-p:text-foreground prose-a:text-primary prose-strong:text-foreground prose-code:bg-muted prose-code:text-foreground prose-pre:bg-muted-foreground prose-pre:text-background dark:prose-pre:bg-muted dark:prose-pre:text-foreground","dangerouslySetInnerHTML":{"__html":"$18"}}]
+17:["$","div",null,{"className":"mt-8 flex justify-center","children":["$","$L10",null,{"href":"/","className":"inline-flex items-center gap-2 rounded-full border border-border/60 px-4 py-2 text-sm font-medium text-muted-foreground transition-colors hover:border-foreground/30 hover:text-foreground","children":[["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-arrow-left h-4 w-4","aria-hidden":"true","children":[["$","path","1l729n",{"d":"m12 19-7-7 7-7"}],["$","path","x3x0zl",{"d":"M19 12H5"}],"$undefined"]}],"All articles"]}]}]
+b:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+7:null
+19:I[27201,["/den.builders/_next/static/chunks/ff1a16fafef87110.js","/den.builders/_next/static/chunks/7dd66bdf8a7e5707.js"],"IconMark"]
+9:{"metadata":[["$","title","0",{"children":"Why Do We Pay So Much for Stick Framing in Los Angeles?"}],["$","meta","1",{"name":"description","content":"Understanding the high costs of stick framing in Los Angeles construction and the factors that drive up lumber and labor prices"}],["$","link","2",{"rel":"icon","href":"/den.builders/favicon.ico?favicon.0b3bf435.ico","sizes":"256x256","type":"image/x-icon"}],["$","$L19","3",{}]],"error":null,"digest":"$undefined"}
+e:"$9:metadata"
