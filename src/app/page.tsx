@@ -15,21 +15,13 @@ const services = [
     title: 'Construction',
     description:
       'Our expertise covers residential, commercial, and custom builds, with a focus on quality workmanship, efficient project management, and on-time delivery. We handle everything from site preparation and concrete work to framing, finishing, and final inspections, ensuring each project meets the highest standards of safety, durability, and craftsmanship.',
-    focusAreas: [
-      'Tokens, theming, and accessibility reviews',
-      'Interaction patterns and governance playbooks',
-      'Embedded pairing with internal design teams',
-    ],
+    focusAreas: [],
   },
   {
     title: 'Remodeling',
     description:
       'We offer complete home remodeling services, including kitchen and bathroom upgrades, room additions, and whole-house renovations. Our team focuses on quality craftsmanship, modern design, and seamless project management to transform your home into a space that fits your lifestyle and needs.',
-    focusAreas: [
-      'Design-to-code partnerships and handoff',
-      'Component architecture and documentation',
-      'Performance and quality instrumentation',
-    ],
+    focusAreas: [],
   },
 ]
 
