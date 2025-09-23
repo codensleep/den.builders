@@ -181,7 +181,7 @@ export default function HomePage() {
               denbuildersinc@gmail.com
             </a>
             <a
-              href="https://cal.com/den-builders/discovery"
+              href="tel:+14242004072"
               className="inline-flex items-center justify-center rounded-full border border-border/40 px-6 py-3 text-sm font-medium text-muted-foreground transition-colors hover:border-foreground/20 hover:text-foreground"
             >
               Schedule a call
