@@ -9,11 +9,7 @@ const services = [
     title: 'Architecture',
     description:
       'We specialize in designing and building functional, modern, and minimalistic spaces. Our architectural approach combines creativity with practicality, ensuring every project reflects quality craftsmanship, efficient design, and lasting value.',
-    focusAreas: [
-      'Discovery sprints and stakeholder alignment',
-      'Experience principles and product narrative',
-      'System maps, journeys, and opportunity sizing',
-    ],
+    focusAreas: [],
   },
   {
     title: 'Construction',
@@ -93,14 +89,16 @@ export default function HomePage() {
                   </p>
                 </div>
 
-                <ul className="mt-6 space-y-3 text-sm text-muted-foreground">
-                  {service.focusAreas.map((area) => (
-                    <li key={area} className="flex items-start gap-2">
-                      <span className="mt-1 inline-block h-1.5 w-1.5 rounded-full bg-foreground/40" aria-hidden />
-                      <span>{area}</span>
-                    </li>
-                  ))}
-                </ul>
+                {service.focusAreas.length > 0 && (
+                  <ul className="mt-6 space-y-3 text-sm text-muted-foreground">
+                    {service.focusAreas.map((area) => (
+                      <li key={area} className="flex items-start gap-2">
+                        <span className="mt-1 inline-block h-1.5 w-1.5 rounded-full bg-foreground/40" aria-hidden />
+                        <span>{area}</span>
+                      </li>
+                    ))}
+                  </ul>
+                )}
               </article>
             ))}
           </div>
