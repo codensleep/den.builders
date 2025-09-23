@@ -49,7 +49,7 @@ export default function HomePage() {
             Constructing Dreams with Integrity.
           </h1>
           <p className="mt-6 text-balance text-lg text-muted-foreground md:text-xl">
-            Essays, experiments, and notes on design systems, engineering practice, and the tools that keep teams moving fast without the noise.
+            At Den Builders, we believe building your dream home or project should be exciting, not stressful. That means we’re honest, easy to work with, and focused on quality every step of the way. From the first idea to the final nail, we make sure you get great results and a team you can trust.
           </p>
         </header>
 
