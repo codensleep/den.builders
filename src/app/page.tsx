@@ -43,10 +43,10 @@ export default function HomePage() {
 
         <header className="mx-auto max-w-3xl py-12 text-center md:py-16">
           <span className="inline-flex items-center gap-2 rounded-full border border-border/60 bg-card/60 px-3 py-1 text-xs font-medium uppercase tracking-[0.35em] text-muted-foreground">
-            Modern web craft
+            Modern homes
           </span>
           <h1 className="mt-6 text-balance text-4xl font-semibold tracking-tight text-foreground sm:text-5xl md:text-6xl">
-            Calm insights on building thoughtful digital products
+            Constructing Dreams with Integrity.
           </h1>
           <p className="mt-6 text-balance text-lg text-muted-foreground md:text-xl">
             Essays, experiments, and notes on design systems, engineering practice, and the tools that keep teams moving fast without the noise.
