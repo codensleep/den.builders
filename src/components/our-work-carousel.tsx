@@ -92,7 +92,7 @@ export function OurWorkCarousel() {
             Our Previous Work
           </p>
           <h2 className="text-balance text-3xl font-semibold tracking-tight text-foreground sm:text-4xl">
-            Selected product collaborations where clarity and craft met momentum.
+            Some of our latest collaborations where clarity and craft met momentum.
           </h2>
           <p className="text-base text-muted-foreground">
             Each engagement pairs lightweight research with confident execution. The result: interfaces that feel inevitable and teams that move faster because of it.
