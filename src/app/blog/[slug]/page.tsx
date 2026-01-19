@@ -1,9 +1,13 @@
 import { notFound } from 'next/navigation'
 import Link from 'next/link'
+import Script from 'next/script'
 import { getAllPostSlugs, getPostBySlug, markdownToHtml } from '@/lib/blog'
 import { Badge } from '@/components/ui/badge'
 import { ThemeToggle } from '@/components/theme-toggle'
 import { ArrowLeft, Calendar, Clock, User } from 'lucide-react'
+
+const siteUrl = 'https://codensleep.github.io/den.builders'
+const ogImageUrl = `${siteUrl}/projects/silver-lake-residence.jpg`
 
 interface BlogPostPageProps {
   params: Promise<{ slug: string }>
@@ -19,6 +23,7 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }: BlogPostPageProps) {
   const { slug } = await params
   const post = getPostBySlug(slug)
+  const url = `${siteUrl}/blog/${slug}`
   
   if (!post) {
     return {
@@ -29,6 +34,31 @@ export async function generateMetadata({ params }: BlogPostPageProps) {
   return {
     title: post.title,
     description: post.description,
+    alternates: {
+      canonical: url,
+    },
+    openGraph: {
+      title: post.title,
+      description: post.description,
+      url,
+      siteName: 'Den Builders',
+      locale: 'en_US',
+      type: 'article',
+      publishedTime: post.date,
+      authors: [post.author],
+      images: [
+        {
+          url: ogImageUrl,
+          alt: 'Den Builders residential project',
+        },
+      ],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: post.title,
+      description: post.description,
+      images: [ogImageUrl],
+    },
   }
 }
 
@@ -38,9 +68,32 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
   try {
     const post = getPostBySlug(slug)
     const htmlContent = await markdownToHtml(post.content)
+    const articleSchema = {
+      '@context': 'https://schema.org',
+      '@type': 'Article',
+      headline: post.title,
+      description: post.description,
+      datePublished: post.date,
+      dateModified: post.date,
+      author: {
+        '@type': 'Person',
+        name: post.author,
+      },
+      publisher: {
+        '@type': 'Organization',
+        name: 'Den Builders',
+        url: siteUrl,
+      },
+      mainEntityOfPage: `${siteUrl}/blog/${slug}`,
+    }
 
     return (
       <div className="min-h-screen bg-background">
+        <Script
+          id={`article-schema-${slug}`}
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+        />
         <div className="mx-auto max-w-4xl px-6 py-10 md:py-14">
           <nav className="mb-12 flex items-center justify-between border-b border-border/60 pb-6">
             <Link

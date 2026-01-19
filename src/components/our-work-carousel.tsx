@@ -14,42 +14,42 @@ interface ProjectItem {
 
 const projects: ProjectItem[] = [
   {
-    title: 'Atlas Finance Platform',
+    title: 'Echo Park Modern',
     description:
-      'A modular analytics surface for a fintech team scaling rapidly across new markets.',
-    sector: 'Fintech infrastructure',
+      'A ground-up single-family build blending clean lines with warm natural materials.',
+    sector: 'Residential construction',
     palette: 'from-emerald-300/90 via-emerald-500/40 to-emerald-900/20',
     image: undefined,
   },
   {
-    title: 'Northwind Studio',
+    title: 'Marina Kitchen Remodel',
     description:
-      'An adaptive design system powering a hybrid desktop and mobile creative workspace.',
-    sector: 'Creative tooling',
+      'A full kitchen and living refresh focused on light, storage, and durable finishes.',
+    sector: 'Interior remodeling',
     palette: 'from-sky-300/90 via-indigo-500/40 to-indigo-900/20',
     image: undefined,
   },
   {
-    title: 'Hearth Housing',
+    title: 'Altadena ADU',
     description:
-      'Turnkey property dashboards that keep local teams aligned around lived-in data.',
-    sector: 'Proptech operations',
+      'A compact backyard unit designed for privacy, daylight, and efficient layout.',
+    sector: 'Accessory dwelling unit',
     palette: 'from-amber-300/90 via-orange-500/40 to-orange-900/20',
     image: undefined,
   },
   {
     title: 'Silver Lake Residence',
     description:
-      'A hillside renovation balancing indoor calm with layered outdoor terraces and native landscaping.',
+      'A hillside renovation balancing indoor calm with layered terraces and native landscaping.',
     sector: 'Residential architecture',
     palette: 'from-rose-300/90 via-rose-500/40 to-rose-900/20',
     image: '/projects/silver-lake-residence.jpg',
   },
   {
-    title: 'Canyon Workspace',
+    title: 'Pasadena Workspace',
     description:
-      'A boutique coworking environment for creative teams with flexible pods and acoustically tuned lounges.',
-    sector: 'Commercial interiors',
+      'A flexible office build-out tuned for acoustics, daylight, and team flow.',
+    sector: 'Commercial build-out',
     palette: 'from-teal-300/90 via-cyan-500/40 to-cyan-900/20',
     image: undefined,
   },
@@ -92,10 +92,10 @@ export function OurWorkCarousel() {
             Our Previous Work
           </p>
           <h2 className="text-balance text-3xl font-semibold tracking-tight text-foreground sm:text-4xl">
-            Some of our latest collaborations where clarity and craft met momentum.
+            Some of our latest builds where vision and craft met precision.
           </h2>
           <p className="text-base text-muted-foreground">
-            Each engagement pairs lightweight research with confident execution. The result: interfaces that feel inevitable and teams that move faster because of it.
+            Each project pairs thoughtful planning with confident execution. The result: spaces that feel considered and teams that move faster because of it.
           </p>
           <div className="flex gap-3">
             <button
@@ -161,7 +161,7 @@ export function OurWorkCarousel() {
                   </div>
 
                   <div className="flex items-center justify-between text-sm text-white/70">
-                    <span>Product strategy / Visual systems / Frontend build</span>
+                    <span>Design / Construction / Project management</span>
                     <span className="font-medium">{String(index + 1).padStart(2, '0')}</span>
                   </div>
 

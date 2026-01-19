@@ -1,8 +1,44 @@
+import type { Metadata } from 'next'
 import Link from 'next/link'
+import Script from 'next/script'
 import { getAllPosts } from '@/lib/blog'
 import { Badge } from '@/components/ui/badge'
 import { ThemeToggle } from '@/components/theme-toggle'
 import { OurWorkCarousel } from '@/components/our-work-carousel'
+
+const siteUrl = 'https://codensleep.github.io/den.builders'
+const ogImageUrl = `${siteUrl}/projects/silver-lake-residence.jpg`
+
+export const metadata: Metadata = {
+  title: 'Los Angeles Architecture, Construction, and Remodeling',
+  description:
+    'Den Builders delivers architecture, construction, and remodeling across Los Angeles with integrity, clear communication, and craftsmanship.',
+  alternates: {
+    canonical: siteUrl,
+  },
+  openGraph: {
+    title: 'Den Builders | Los Angeles Architecture, Construction, Remodeling',
+    description:
+      'Den Builders delivers architecture, construction, and remodeling across Los Angeles with integrity, clear communication, and craftsmanship.',
+    url: siteUrl,
+    siteName: 'Den Builders',
+    locale: 'en_US',
+    type: 'website',
+    images: [
+      {
+        url: ogImageUrl,
+        alt: 'Den Builders residential project',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Den Builders | Los Angeles Architecture, Construction, Remodeling',
+    description:
+      'Den Builders delivers architecture, construction, and remodeling across Los Angeles with integrity, clear communication, and craftsmanship.',
+    images: [ogImageUrl],
+  },
+}
 
 const services = [
   {
@@ -27,9 +63,25 @@ const services = [
 
 export default function HomePage() {
   const posts = getAllPosts()
+  const businessSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'HomeAndConstructionBusiness',
+    name: 'Den Builders',
+    url: siteUrl,
+    description:
+      'Architecture, construction, and remodeling in Los Angeles with integrity, clear communication, and craftsmanship.',
+    areaServed: 'Los Angeles, CA',
+    telephone: '+1-424-200-4072',
+    email: 'denbuildersinc@gmail.com',
+  }
 
   return (
     <div className="min-h-screen bg-background">
+      <Script
+        id="den-builders-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(businessSchema) }}
+      />
       <div className="mx-auto max-w-6xl px-6 py-12 md:py-16">
         <nav className="flex items-center justify-between border-b border-border/60 pb-6">
           <Link
@@ -59,7 +111,7 @@ export default function HomePage() {
               Our Services
             </p>
             <h2 className="mt-4 text-balance text-3xl font-semibold tracking-tight text-foreground sm:text-4xl">
-              Collaborations built around partnership, pace, and measurable impact.
+              Projects built around partnership, pace, and measurable quality.
             </h2>
             <p className="mx-auto mt-4 max-w-2xl text-base text-muted-foreground">
               A team of strong builders and architects based in Los Angeles helps our customers achieve excellence through outstanding service. We focus on neat, ergonomic, and impressive design. We offer complete interior design projects, basic remodeling, and construction for any residential space.
@@ -161,7 +213,7 @@ export default function HomePage() {
             Ready for the next project that deserves this level of care?
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-base text-muted-foreground">
-            Share a few details about your product, timeline, or the challenge in front of you. We will respond within two business days with next steps and available collaboration windows.
+            Share a few details about your project, timeline, or the challenge in front of you. We will respond within two business days with next steps and available collaboration windows.
           </p>
           <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
             <a
