@@ -46,7 +46,7 @@ export default function HomePage() {
             Modern homes
           </span>
           <h1 className="mt-6 text-balance text-4xl font-semibold tracking-tight text-foreground sm:text-5xl md:text-6xl">
-            Constructing Dreams with Integrity.
+            Constructing homes with Integrity.
           </h1>
           <p className="mt-6 text-balance text-lg text-muted-foreground md:text-xl">
             At Den Builders, we believe building your dream home or project should be exciting, not stressful. That means we’re honest, easy to work with, and focused on quality every step of the way. From the first idea to the final nail, we make sure you get great results and a team you can trust.
