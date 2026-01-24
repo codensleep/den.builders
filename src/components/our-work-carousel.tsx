@@ -17,7 +17,7 @@ const projects: ProjectItem[] = [
     title: 'Echo Park Modern',
     description:
       'A ground-up single-family build blending clean lines with warm natural materials.',
-    sector: 'Government contracts',
+    sector: 'Residential construction',
     palette: 'from-emerald-300/90 via-emerald-500/40 to-emerald-900/20',
     image: undefined,
   },
