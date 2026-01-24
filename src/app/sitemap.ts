@@ -1,9 +1,9 @@
 import { MetadataRoute } from 'next'
 import { getAllPostSlugs, getPostBySlug } from '@/lib/blog'
-
-const siteUrl = 'https://codensleep.github.io/den.builders'
+export const dynamic = 'force-static'
 
 export default function sitemap(): MetadataRoute.Sitemap {
+  const siteUrl = 'https://den.builders'
   const slugs = getAllPostSlugs()
   const posts = slugs.map((slug) => {
     const post = getPostBySlug(slug)
