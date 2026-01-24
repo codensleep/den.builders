@@ -10,16 +10,18 @@ interface ProjectItem {
   sector: string
   palette: string
   image?: string
+  imageAlt?: string
 }
 
 const projects: ProjectItem[] = [
   {
-    title: 'Echo Park Modern',
+    title: 'Los Angeles Construction Company',
     description:
-      'A ground-up single-family build blending clean lines with warm natural materials.',
-    sector: 'Residential construction',
-    palette: 'from-emerald-300/90 via-emerald-500/40 to-emerald-900/20',
-    image: undefined,
+      'Structural framing and site coordination for a fast-track commercial build.',
+    sector: 'Construction management',
+    palette: 'from-slate-300/90 via-orange-500/40 to-stone-900/20',
+    image: '/projects/construction-1.jpg',
+    imageAlt: 'construction company',
   },
   {
     title: 'Marina Kitchen Remodel',
@@ -139,7 +141,7 @@ export function OurWorkCarousel() {
                     {showImage && (
                       <Image
                         src={project.image as string}
-                        alt={project.title}
+                        alt={project.imageAlt ?? project.title}
                         fill
                         className="object-cover"
                         sizes="(min-width: 1024px) 640px, (min-width: 768px) 50vw, 100vw"
