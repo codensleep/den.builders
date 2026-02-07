@@ -91,7 +91,7 @@ export function OurWorkCarousel() {
       <div className="flex flex-col gap-12 md:flex-row md:items-center md:justify-between">
         <div className="max-w-xl space-y-6">
           <p className="text-xs font-medium uppercase tracking-[0.35em] text-muted-foreground">
-            Our Previous Work
+            Our Previous Projects
           </p>
           <h2 className="text-balance text-3xl font-semibold tracking-tight text-foreground sm:text-4xl">
             Some of our latest builds where vision and craft met precision.
