@@ -24,12 +24,13 @@ const projects: ProjectItem[] = [
     imageAlt: 'construction company',
   },
   {
-    title: 'Marina Kitchen Remodel',
+    title: 'We love custom fabrication',
     description:
       'A full kitchen and living refresh focused on light, storage, and durable finishes.',
     sector: 'Interior remodeling',
     palette: 'from-sky-300/90 via-indigo-500/40 to-indigo-900/20',
-    image: undefined,
+    image: '/projects/carpentry.jpg',
+    imageAlt: 'carpentry',
   },
   {
     title: 'Altadena ADU',
