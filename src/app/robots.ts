@@ -1,6 +1,7 @@
 import { MetadataRoute } from 'next'
 
 const siteUrl = 'https://codensleep.github.io/den.builders'
+export const dynamic = 'force-static'
 
 export default function robots(): MetadataRoute.Robots {
   return {
