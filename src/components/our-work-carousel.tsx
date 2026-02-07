@@ -15,7 +15,7 @@ interface ProjectItem {
 
 const projects: ProjectItem[] = [
   {
-    title: 'Los Angeles Construction Company',
+    title: 'Los Angeles',
     description:
       'Structural framing and site coordination for a fast-track commercial build.',
     sector: 'Construction management',
