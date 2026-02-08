@@ -29,7 +29,7 @@ const projects: ProjectItem[] = [
       'A full kitchen and living refresh focused on light, storage, and durable finishes.',
     sector: 'Interior remodeling',
     palette: 'from-sky-300/90 via-indigo-500/40 to-indigo-900/20',
-    image: '/projects/carpentry.jpg',
+    image: '/projects/kitchen.jpg',
     imageAlt: 'kitchen remodel',
   },
   {
