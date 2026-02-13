@@ -38,7 +38,7 @@ const projects: ProjectItem[] = [
       'A compact backyard unit designed for privacy, daylight, and efficient layout.',
     sector: 'Accessory dwelling unit',
     palette: 'from-amber-300/90 via-orange-500/40 to-orange-900/20',
-    image: undefined,
+    image: '/projects/adu.jpg',
   },
   {
     title: 'Silver Lake Residence',
