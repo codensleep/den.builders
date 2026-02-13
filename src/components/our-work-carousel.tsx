@@ -49,7 +49,7 @@ const projects: ProjectItem[] = [
     image: undefined,
   },
   {
-    title: 'Pasadena Workspace',
+    title: 'Hotels',
     description:
       'We focus on commercial projects that demand precision, coordination, and code compliance.',
     sector: 'Commercial build-out',
