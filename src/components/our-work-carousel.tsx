@@ -46,7 +46,7 @@ const projects: ProjectItem[] = [
       'A hillside renovation balancing indoor calm with layered terraces and native landscaping.',
     sector: 'Residential architecture',
     palette: 'from-rose-300/90 via-rose-500/40 to-rose-900/20',
-    image: '/projects/silver-lake-residence.jpg',
+    image: '/projects/commercial.jpg',
   },
   {
     title: 'Pasadena Workspace',
