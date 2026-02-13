@@ -51,7 +51,7 @@ const projects: ProjectItem[] = [
   {
     title: 'Pasadena Workspace',
     description:
-      'A flexible office build-out tuned for acoustics, daylight, and team flow.',
+      'We focus on commercial projects that demand precision, coordination, and code compliance.',
     sector: 'Commercial build-out',
     palette: 'from-teal-300/90 via-cyan-500/40 to-cyan-900/20',
     image: '/projects/commercial.jpg',
