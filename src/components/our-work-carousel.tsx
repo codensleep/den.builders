@@ -46,7 +46,7 @@ const projects: ProjectItem[] = [
       'A hillside renovation balancing indoor calm with layered terraces and native landscaping.',
     sector: 'Residential architecture',
     palette: 'from-rose-300/90 via-rose-500/40 to-rose-900/20',
-    image: '/projects/commercial.jpg',
+    image: undefined,
   },
   {
     title: 'Pasadena Workspace',
@@ -54,7 +54,7 @@ const projects: ProjectItem[] = [
       'A flexible office build-out tuned for acoustics, daylight, and team flow.',
     sector: 'Commercial build-out',
     palette: 'from-teal-300/90 via-cyan-500/40 to-cyan-900/20',
-    image: undefined,
+    image: '/projects/commercial.jpg',
   },
 ]
 
