@@ -163,11 +163,6 @@ export function OurWorkCarousel() {
                     </p>
                   </div>
 
-                  <div className="flex items-center justify-between text-sm text-white/70">
-                    <span>Design / Construction / Project management</span>
-                    <span className="font-medium">{String(index + 1).padStart(2, '0')}</span>
-                  </div>
-
                   <div className="pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(circle_at_top_right,rgba(255,255,255,0.35),transparent_45%)]" />
                 </article>
               )
