@@ -7,7 +7,7 @@ import { ThemeToggle } from '@/components/theme-toggle'
 import { OurWorkCarousel } from '@/components/our-work-carousel'
 
 const siteUrl = 'https://codensleep.github.io/den.builders'
-const ogImageUrl = `${siteUrl}/projects/silver-lake-residence.jpg`
+const ogImageUrl = `${siteUrl}/projects/optimized/construction-1.jpg`
 
 export const metadata: Metadata = {
   title: 'Los Angeles Architecture, Construction, and Remodeling',

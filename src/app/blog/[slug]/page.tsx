@@ -7,7 +7,7 @@ import { ThemeToggle } from '@/components/theme-toggle'
 import { ArrowLeft, Calendar, Clock, User } from 'lucide-react'
 
 const siteUrl = 'https://codensleep.github.io/den.builders'
-const ogImageUrl = `${siteUrl}/projects/silver-lake-residence.jpg`
+const ogImageUrl = `${siteUrl}/projects/optimized/construction-1.jpg`
 
 interface BlogPostPageProps {
   params: Promise<{ slug: string }>

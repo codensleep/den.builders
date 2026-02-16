@@ -20,7 +20,7 @@ const projects: ProjectItem[] = [
       'Structural framing and site coordination for a fast-track commercial build.',
     sector: 'Construction management',
     palette: 'from-slate-300/90 via-orange-500/40 to-stone-900/20',
-    image: '/projects/construction-1.jpg',
+    image: '/projects/optimized/construction-1.jpg',
     imageAlt: 'construction company',
   },
   {
@@ -29,7 +29,7 @@ const projects: ProjectItem[] = [
       'A full kitchen and living refresh focused on light, storage, and durable finishes.',
     sector: 'Interior remodeling',
     palette: 'from-sky-300/90 via-indigo-500/40 to-indigo-900/20',
-    image: '/projects/kitchen.jpg',
+    image: '/projects/optimized/kitchen.jpg',
     imageAlt: 'kitchen remodel',
   },
   {
@@ -38,7 +38,7 @@ const projects: ProjectItem[] = [
       'A compact backyard unit designed for privacy, daylight, and efficient layout.',
     sector: 'Accessory dwelling unit',
     palette: 'from-amber-300/90 via-orange-500/40 to-orange-900/20',
-    image: '/projects/adu.jpg',
+    image: '/projects/optimized/adu.jpg',
   },
   {
     title: 'Custom fabrication',
@@ -46,7 +46,7 @@ const projects: ProjectItem[] = [
       'A hillside renovation balancing indoor calm with layered terraces and native landscaping.',
     sector: 'Custom Work',
     palette: 'from-rose-300/90 via-rose-500/40 to-rose-900/20',
-    image: '/projects/custom fabrication.jpg',
+    image: '/projects/optimized/custom-fabrication.jpg',
   },
   {
     title: 'Hotels',
@@ -54,7 +54,7 @@ const projects: ProjectItem[] = [
       'We focus on commercial projects that demand precision, coordination, and code compliance.',
     sector: 'Commercial build-out',
     palette: 'from-teal-300/90 via-cyan-500/40 to-cyan-900/20',
-    image: '/projects/commercial.jpg',
+    image: '/projects/optimized/commercial.jpg',
   },
 ]
 
