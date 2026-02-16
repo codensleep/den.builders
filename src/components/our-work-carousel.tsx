@@ -44,7 +44,7 @@ const projects: ProjectItem[] = [
     title: 'Custom fabrication',
     description:
       'A hillside renovation balancing indoor calm with layered terraces and native landscaping.',
-    sector: 'Residential architecture',
+    sector: 'Custom Work',
     palette: 'from-rose-300/90 via-rose-500/40 to-rose-900/20',
     image: '/projects/custom fabrication.jpg',
   },
