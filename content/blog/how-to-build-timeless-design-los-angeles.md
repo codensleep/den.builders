@@ -3,7 +3,12 @@ title: "How to Build a Timeless Home Design in Los Angeles"
 description: "Guiding principles Den Builders uses to create enduring homes across Los Angeles neighborhoods without chasing short-lived trends"
 date: "2024-02-08"
 author: "Den Builders Team"
-tags: ["design", "architecture", "los-angeles", "remodeling", "construction"]
+tags:
+  - design
+  - architecture
+  - los-angeles
+  - remodeling
+  - construction
 ---
 
 # How to Build a Timeless Home Design in Los Angeles
