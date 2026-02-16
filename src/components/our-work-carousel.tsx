@@ -104,7 +104,7 @@ export function OurWorkCarousel() {
             <button
               type="button"
               onClick={previous}
-              className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-border/60 text-muted-foreground transition-colors hover:border-foreground/40 hover:text-foreground"
+              className="inline-flex h-12 w-12 items-center justify-center rounded-full border border-border/60 text-muted-foreground transition-colors hover:border-foreground/40 hover:text-foreground"
               aria-label="Show previous project"
             >
               <ArrowLeft className="h-4 w-4" />
@@ -112,7 +112,7 @@ export function OurWorkCarousel() {
             <button
               type="button"
               onClick={next}
-              className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-border/60 text-muted-foreground transition-colors hover:border-foreground/40 hover:text-foreground"
+              className="inline-flex h-12 w-12 items-center justify-center rounded-full border border-border/60 text-muted-foreground transition-colors hover:border-foreground/40 hover:text-foreground"
               aria-label="Show next project"
             >
               <ArrowRight className="h-4 w-4" />
@@ -177,14 +177,20 @@ export function OurWorkCarousel() {
                   key={project.title}
                   type="button"
                   onClick={() => goTo(index)}
-                  className={`h-2.5 rounded-full transition-all duration-300 ${
+                  className={`inline-flex h-11 items-center justify-center rounded-full px-2 transition-all duration-300 ${
                     isActive
-                      ? 'w-8 bg-foreground'
-                      : 'w-2.5 bg-muted-foreground/40 hover:bg-muted-foreground/60'
+                      ? 'w-11 bg-foreground/15'
+                      : 'w-11 bg-muted-foreground/20 hover:bg-muted-foreground/30'
                   }`}
                   aria-label={`Show project ${index + 1}`}
                   aria-pressed={isActive}
-                />
+                >
+                  <span
+                    className={`h-2.5 rounded-full ${
+                      isActive ? 'w-8 bg-foreground' : 'w-2.5 bg-muted-foreground/70'
+                    }`}
+                  />
+                </button>
               )
             })}
           </div>
