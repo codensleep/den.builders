@@ -33,12 +33,12 @@ transparency, and consistency.
 California projects often require coordination across multiple layers of
 regulation:
 
--   Local zoning ordinances\
--   California Building Code (CBC)\
--   Title 24 Energy Compliance\
--   Seismic and structural requirements\
--   ADU state mandates\
--   Coastal, hillside, and environmental overlays\
+-   Local zoning ordinances
+-   California Building Code (CBC)
+-   Title 24 Energy Compliance
+-   Seismic and structural requirements
+-   ADU state mandates
+-   Coastal, hillside, and environmental overlays
 -   Fire department review
 
 Manual plan review for even small residential projects can take
@@ -53,11 +53,11 @@ while preserving professional oversight.
 AI can instantly analyze uploaded plans or BIM models and compare them
 against local zoning requirements, verifying:
 
--   Front, side, and rear setbacks\
--   Height limits\
--   Lot coverage\
--   Floor Area Ratio (FAR)\
--   Parking requirements\
+-   Front, side, and rear setbacks
+-   Height limits
+-   Lot coverage
+-   Floor Area Ratio (FAR)
+-   Parking requirements
 -   ADU compliance under California state law
 
 Instead of waiting weeks for initial comments, applicants could receive
@@ -68,10 +68,10 @@ immediate feedback on measurable compliance issues.
 Title 24 compliance is one of the most common sources of delays in
 California. AI tools could cross-reference:
 
--   Envelope assemblies\
--   Window performance values\
--   Roof reflectivity\
--   Solar requirements\
+-   Envelope assemblies
+-   Window performance values
+-   Roof reflectivity
+-   Solar requirements
 -   Insulation specifications
 
 By validating documentation before submission enters the review queue,
@@ -81,10 +81,10 @@ cities can prevent incomplete applications from slowing down the system.
 
 If municipalities accept IFC or Revit model submissions, AI can:
 
--   Measure stair and guard dimensions\
--   Confirm egress path distances\
--   Verify fire-rated wall continuity\
--   Check occupant load calculations\
+-   Measure stair and guard dimensions
+-   Confirm egress path distances
+-   Verify fire-rated wall continuity
+-   Check occupant load calculations
 -   Validate structural spacing consistency
 
 This reduces manual measurement time and allows plan checkers to focus
@@ -105,10 +105,10 @@ months to days.
 Permit delays are often procedural. AI can automatically route projects
 to:
 
--   Planning\
--   Building & Safety\
--   Fire\
--   Public Works\
+-   Planning
+-   Building & Safety
+-   Fire
+-   Public Works
 -   Environmental departments
 
 By identifying project type and risk level, the system can streamline
@@ -118,8 +118,8 @@ multi-department coordination and reduce administrative bottlenecks.
 
 AI can assist inspection teams by:
 
--   Optimizing inspection scheduling\
--   Predicting workload demand\
+-   Optimizing inspection scheduling
+-   Predicting workload demand
 -   Providing digital overlays of approved plans during field visits
 
 This reduces re-inspections and improves consistency in enforcement.
@@ -128,10 +128,10 @@ This reduces re-inspections and improves consistency in enforcement.
 
 Implementing AI in planning departments provides measurable advantages:
 
--   Faster housing delivery\
--   Reduced backlog\
--   Increased permit revenue efficiency\
--   Improved transparency for applicants\
+-   Faster housing delivery
+-   Reduced backlog
+-   Increased permit revenue efficiency
+-   Improved transparency for applicants
 -   Greater economic development activity
 
 For the construction industry, shorter permit timelines mean improved
@@ -141,9 +141,9 @@ cash flow, reduced holding costs, and higher client satisfaction.
 
 Successful adoption requires:
 
--   Machine-readable code databases\
--   Standardized digital submission formats\
--   Clear governance and oversight policies\
+-   Machine-readable code databases
+-   Standardized digital submission formats
+-   Clear governance and oversight policies
 -   Pilot programs before full rollout
 
 AI should enhance human review---not replace it. Professional judgment
