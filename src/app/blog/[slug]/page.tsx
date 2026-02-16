@@ -161,7 +161,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
             </header>
 
             <div
-              className="prose prose-lg max-w-none prose-headings:text-foreground prose-p:text-foreground prose-a:text-primary prose-strong:text-foreground prose-code:bg-muted prose-code:text-foreground prose-pre:bg-muted-foreground prose-pre:text-background dark:prose-pre:bg-muted dark:prose-pre:text-foreground"
+              className="prose prose-lg prose-den max-w-none prose-headings:text-foreground prose-p:text-foreground prose-a:text-primary prose-strong:text-foreground prose-code:bg-muted prose-code:text-foreground prose-pre:bg-muted-foreground prose-pre:text-background dark:prose-pre:bg-muted dark:prose-pre:text-foreground"
               dangerouslySetInnerHTML={{ __html: htmlContent }}
             />
           </article>

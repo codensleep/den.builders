@@ -121,3 +121,67 @@
     @apply bg-background text-foreground;
   }
 }
+
+@layer components {
+  .prose-den {
+    line-height: 1.85;
+  }
+
+  .prose-den :where(h2, h3, h4) {
+    scroll-margin-top: 6rem;
+    letter-spacing: -0.01em;
+  }
+
+  .prose-den :where(p, li) {
+    color: color-mix(in oklch, var(--foreground) 88%, var(--background));
+  }
+
+  .prose-den :where(p) {
+    margin-top: 1.1em;
+    margin-bottom: 1.1em;
+  }
+
+  .prose-den :where(ul, ol) {
+    margin-top: 1.1em;
+    margin-bottom: 1.1em;
+    padding-left: 1.2em;
+  }
+
+  .prose-den :where(li + li) {
+    margin-top: 0.45em;
+  }
+
+  .prose-den :where(a) {
+    text-decoration-thickness: 1.5px;
+    text-underline-offset: 3px;
+  }
+
+  .prose-den :where(blockquote) {
+    border-left: 3px solid color-mix(in oklch, var(--foreground) 30%, transparent);
+    color: color-mix(in oklch, var(--foreground) 80%, var(--background));
+    font-style: normal;
+    background: color-mix(in oklch, var(--muted) 70%, transparent);
+    padding: 0.7rem 1rem;
+    border-radius: 0.75rem;
+  }
+
+  .prose-den :where(code):not(:where(pre code)) {
+    border: 1px solid color-mix(in oklch, var(--border) 85%, transparent);
+    border-radius: 0.45rem;
+    padding: 0.12rem 0.4rem;
+    font-size: 0.9em;
+    font-weight: 500;
+  }
+
+  .prose-den :where(pre) {
+    border: 1px solid color-mix(in oklch, var(--border) 70%, transparent);
+    border-radius: 1rem;
+    padding: 1rem 1.1rem;
+    overflow-x: auto;
+  }
+
+  .prose-den :where(img) {
+    border-radius: 1rem;
+    border: 1px solid color-mix(in oklch, var(--border) 70%, transparent);
+  }
+}
