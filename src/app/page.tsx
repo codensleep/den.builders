@@ -150,34 +150,6 @@ export default function HomePage() {
 
         <OurWorkCarousel />
 
-        <section className="mx-auto mt-8 max-w-4xl rounded-3xl border border-border/60 bg-card/70 px-6 py-8 dark:bg-card/60">
-          <h2 className="text-2xl font-semibold tracking-tight text-foreground">
-            Den Builders at a glance
-          </h2>
-          <dl className="mt-6 grid gap-4 sm:grid-cols-2">
-            <div>
-              <dt className="text-sm font-medium text-muted-foreground">Business</dt>
-              <dd className="mt-1 text-base text-foreground">Den Builders</dd>
-            </div>
-            <div>
-              <dt className="text-sm font-medium text-muted-foreground">Location</dt>
-              <dd className="mt-1 text-base text-foreground">Los Angeles, California</dd>
-            </div>
-            <div>
-              <dt className="text-sm font-medium text-muted-foreground">Primary Services</dt>
-              <dd className="mt-1 text-base text-foreground">
-                Architecture, construction, remodeling, ADUs, and commercial projects.
-              </dd>
-            </div>
-            <div>
-              <dt className="text-sm font-medium text-muted-foreground">Contact</dt>
-              <dd className="mt-1 text-base text-foreground">
-                denbuildersinc@gmail.com | +1-424-200-4072
-              </dd>
-            </div>
-          </dl>
-        </section>
-
         <section className="space-y-12">
           <div className="grid gap-6 sm:grid-cols-2">
             {posts.map((post) => (
@@ -257,6 +229,34 @@ export default function HomePage() {
               Schedule a call
             </a>
           </div>
+        </section>
+
+        <section className="mx-auto mt-12 max-w-4xl rounded-3xl border border-border/60 bg-card/70 px-6 py-8 dark:bg-card/60">
+          <h2 className="text-2xl font-semibold tracking-tight text-foreground">
+            Den Builders at a glance
+          </h2>
+          <dl className="mt-6 grid gap-4 sm:grid-cols-2">
+            <div>
+              <dt className="text-sm font-medium text-muted-foreground">Business</dt>
+              <dd className="mt-1 text-base text-foreground">Den Builders</dd>
+            </div>
+            <div>
+              <dt className="text-sm font-medium text-muted-foreground">Location</dt>
+              <dd className="mt-1 text-base text-foreground">Los Angeles, California</dd>
+            </div>
+            <div>
+              <dt className="text-sm font-medium text-muted-foreground">Primary Services</dt>
+              <dd className="mt-1 text-base text-foreground">
+                Architecture, construction, remodeling, ADUs, and commercial projects.
+              </dd>
+            </div>
+            <div>
+              <dt className="text-sm font-medium text-muted-foreground">Contact</dt>
+              <dd className="mt-1 text-base text-foreground">
+                denbuildersinc@gmail.com | +1-424-200-4072
+              </dd>
+            </div>
+          </dl>
         </section>
       </div>
     </div>
