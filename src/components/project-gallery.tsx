@@ -55,6 +55,14 @@ const projects: Project[] = [
     image: '/projects/optimized/commercial.jpg',
     imageAlt: 'Commercial hospitality construction project',
   },
+  {
+    title: 'Hospitals and Clinics',
+    description:
+      'Healthcare interiors planned around patient comfort, durable finishes, and efficient care.',
+    category: 'Healthcare construction',
+    image: '/projects/optimized/clinic.jpg',
+    imageAlt: 'Bright modern clinic treatment room',
+  },
 ]
 
 export function ProjectGallery() {
