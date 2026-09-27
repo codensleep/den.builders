@@ -95,7 +95,7 @@ export function ProjectGallery() {
 
   return (
     <section className="mx-auto max-w-6xl px-6 py-16 md:py-24" aria-labelledby="project-gallery-title">
-      <div className="mb-10 grid gap-5 md:grid-cols-[0.75fr_1.25fr] md:items-end">
+      <div className="mb-10 grid gap-5 md:grid-cols-[0.75fr_1.25fr] md:items-start">
         <div>
           <p className="text-xs font-medium uppercase tracking-[0.35em] text-muted-foreground">
             Our Previous Projects
@@ -107,7 +107,7 @@ export function ProjectGallery() {
             Work shaped by purpose, place, and precise execution.
           </h2>
         </div>
-        <p className="max-w-xl text-base text-muted-foreground md:justify-self-end">
+        <p className="max-w-xl text-base text-muted-foreground md:mt-8 md:justify-self-end">
           Explore a selection of residential, commercial, and custom projects completed by Den Builders. Select any image for a closer look.
         </p>
       </div>
