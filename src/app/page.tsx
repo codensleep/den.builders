@@ -4,7 +4,7 @@ import Script from 'next/script'
 import { getAllPosts } from '@/lib/blog'
 import { Badge } from '@/components/ui/badge'
 import { ThemeToggle } from '@/components/theme-toggle'
-import { OurWorkCarousel } from '@/components/our-work-carousel'
+import { ProjectGallery } from '@/components/project-gallery'
 
 const siteUrl = 'https://codensleep.github.io/den.builders'
 const ogImageUrl = `${siteUrl}/projects/optimized/construction-1.jpg`
@@ -148,7 +148,7 @@ export default function HomePage() {
           </div>
         </section>
 
-        <OurWorkCarousel />
+        <ProjectGallery />
 
         <section className="space-y-12">
           <div className="grid gap-6 sm:grid-cols-2">
